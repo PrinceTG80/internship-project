@@ -1,0 +1,11 @@
+.hov{
+    color: #FF4242;
+    background-color: transparent;
+    text-decoration: none;
+}
+.hov:hover {
+    color:#99292d;
+    
+    background-color: transparent;
+    text-decoration: none;
+}

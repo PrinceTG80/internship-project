@@ -1,0 +1,52 @@
+
+
+<nav class="navbar navbar-expand-lg " style="background-color:#8AF3FF" >
+    <a class="navbar-brand" style="color: #fcb456;" href="#" routerLink='/home' >MySiteName</a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse quicksand" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <!-- <li class="nav-item active">
+          <a class="nav-link " href="#" routerLink='/home'> Home</a>
+        </li> -->
+        <li class="nav-item " *ngFor='let i of linksForHeader' > <!-- use of *ngFor-->
+          <p class="nav-link hov mt-lg-3"  [routerLink]="i.link">{{i.title}}</p>  <!-- [href]='' is same as  href='{{}}' -->
+        </li>
+        
+
+        <!-- <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled link</a>
+        </li> -->
+        
+      </ul>
+
+      <div class="nav-item dropdown" >
+        <a class="nav-link dropdown-toggle hovershadow" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <img src="http://127.0.0.1:8000/static/user.png" style="width: 25px;" alt="person">
+          <!-- using others website for my icon for now,  also donno how to resize -->      
+
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Profile</a>
+          <a class="dropdown-item" href="#">Order History</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="/home" (click)="logout()"  style="color:rgb(255, 75, 62);"> Logout</a> <!-- This executes a func as well as reroutes to home-->
+        </div>
+
+      </div>
+
+      <div class="nav-item " >
+        <a class="nav-link hovershadow" routerLink='/cart'> <img src="http://127.0.0.1:8000/static/shopping-cart.svg" style="width: 30px;" alt="cart"></a>
+      </div>
+
+      <!-- <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form> -->
+
+    </div>
+</nav>
+<!-- <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->

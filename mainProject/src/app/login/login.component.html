@@ -1,0 +1,46 @@
+
+<div class="container my-4">
+            
+    <!-- <div class=" background text-center quicksand" >
+        <h1 style="color:rgb(255, 123, 0);">
+           <b>Shoppit</b> 
+        </h1>
+        <h4 class="text-muted text-center">
+            Created by Pranav Dabre
+        </h4>
+    </div> -->
+
+    <div >
+        <div class="row ">
+
+            <div class="col"></div>
+            <div  class="col-sm-4 center border border-primary py-2 shadow-lg quicksand" #logMeIn > <!-- the login box needs a border -->   
+                <div *ngIf='!loginValid'><p style="font-size: 75%; color: red;" >Wrong Email or Password!<br>Try again</p></div>
+                <div #inputEmail><!--this div i've added just for the purpose of inbuilt email validation we get in properties of its children HTMLCollection-->
+                    <input style="width: 75%;" type="email" placeholder="Email" [(ngModel)]='inEmail' required />
+                </div>
+                
+                
+                <div *ngIf='!emailValid'><p style="font-size: 75%;" >{{emdisp}}</p></div>
+               
+                <input class="my-3" style="width: 75%;" type="password" placeholder="Password" [(ngModel)]='inPswd' required/> <!-- you may just use DOM for getting input rather than ngModel-->
+                
+                
+                <button style="width: 75%;" type="button" class="btn btn-light shadow-sm" (click)="signMeIn(inputEmail)">Sign in</button>
+                
+                
+                <p class="text-muted py-2">Don't have an account?<a href="#" routerLink='/signup'> SignUp!</a></p>
+                
+            </div>
+            <div class="col"></div>
+
+        </div>
+    </div>
+
+    
+
+
+</div>
+<div class="bottom-position">
+    <app-footer></app-footer>
+</div>

@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="row">
+        <div class="col p-0">
+            <img src="{{cardImage}}" style="width: 100%;"> <!-- [src]='...' is same as src='{{...}}'-->
+            <div class="shadow p-3">
+                <p class="pt-2" style="font-size: 24px;">{{cardTitle}} </p>
+                <!-- <p>
+                    {{cardWriteup}}
+                   
+                </p> -->
+                <p [innerHTML]='cardWriteup'> </p> <!-- this way you can insert <br> tag inside the cardWriteup array -->
+            </div>
+        </div>
+    </div>
+</div>

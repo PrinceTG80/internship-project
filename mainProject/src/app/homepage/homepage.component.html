@@ -1,0 +1,22 @@
+<!-- see carousels images -->
+<div>
+  <app-carousel></app-carousel>
+</div>
+
+<h1 class='quicksand text-center'>Season Best Sellers</h1>
+
+<!-- cards -->
+<div>
+    <div class='row p-3'>
+      <div class='col-sm-3 py-3' *ngFor= "let i of cardsContent"> <!-- cardsContent array is defined in app.component.ts inside export class-->
+        <app-cards [cardImage]='i.cardImage' [cardTitle]='i.cardTitle' [cardWriteup]='i.cardWriteup'></app-cards>
+  
+      </div>
+    </div>
+  
+</div>
+<!-- <div><p>This is {{logged}}</p></div> -->
+
+<div>
+  <app-footer></app-footer>
+</div>
