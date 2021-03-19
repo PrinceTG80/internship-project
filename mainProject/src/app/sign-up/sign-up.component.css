@@ -1,0 +1,8 @@
+.background{
+    background-image: url(http://127.0.0.1:8000/static/17545.jpg);
+    height:100%;
+    
+    background-size:cover;
+    background-position: center;
+    
+}

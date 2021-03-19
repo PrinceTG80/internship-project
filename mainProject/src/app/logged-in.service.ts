@@ -10,8 +10,8 @@ export class LoggedInService {
   logged=localStorage.getItem('id');
 
   loguserin( id:string){
-    localStorage.setItem('id',id)
-  }
+   localStorage.setItem('id',id)
+  } 
 
   loguserout(){
     localStorage.removeItem('id')

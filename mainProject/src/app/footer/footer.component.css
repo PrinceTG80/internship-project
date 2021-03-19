@@ -1,0 +1,7 @@
+hr.solid {
+    border-top: 3px solid rgba(187, 187, 187, 0.534);
+  }
+
+p:hover{
+  color: white;
+}

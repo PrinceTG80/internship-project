@@ -13,6 +13,15 @@ import { CarouselComponent } from './carousel/carousel.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { PdtComponent } from './pdt/pdt.component';
+import { Scroll } from '@angular/router';
+import { CartComponent } from './cart/cart.component';
+import { ProfileviewComponent } from './profileview/profileview.component';
+import { ProductCardComponent } from './product-card/product-card.component';
+import { MenComponent } from './men/men.component';
+import { WomenComponent } from './women/women.component';
+import { ResourcesComponent } from './resources/resources.component';
+import { AboutUsComponent } from './about-us/about-us.component';
 
 @NgModule({
   declarations: [
@@ -23,14 +32,23 @@ import { FooterComponent } from './footer/footer.component';
     CarouselComponent,
     SignUpComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    PdtComponent,
+    CartComponent,
+    ProfileviewComponent,
+    ProductCardComponent,
+    MenComponent,
+    WomenComponent,
+    ResourcesComponent,
+    AboutUsComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    NgbModule
+    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

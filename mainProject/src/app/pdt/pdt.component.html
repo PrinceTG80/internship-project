@@ -1,0 +1,19 @@
+<div class="row my-4">
+    <div class="container col-3 sm shadow ">
+        <img src="{{Img}}" alt="product img" width="500px" style="position: relative;">
+    </div>
+
+    <div class="container col-8 ml-4 text-center " style="text-align: right;">
+    <h4>{{Title}}</h4><!--name-->
+    <p>Details:Lorem Ipsum dolor sit amet</p>
+    <p>Size:{{Size}}</p>
+    <p>Colour:{{Colour}} </p>
+    <h5>Price: ₹{{Price}}</h5>
+    <div class="mt-5">
+        <button style="width: 30%;" type="button" class="btn btn-primary shadow-sm" (click)="addToCart()">Add to Cart</button>
+        <p *ngIf="ifdisp" style="color: rgb(60, 255, 0);">{{disp}}</p>
+    </div>
+    </div>
+</div>
+
+<!-- <app-footer class="mt-3"  ></app-footer> -->

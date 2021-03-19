@@ -1,18 +1,12 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { LoggedInService } from '../logged-in.service';
-
-
 
 @Component({
-  selector: 'app-homepage',
-  templateUrl: './homepage.component.html',
-  styleUrls: ['./homepage.component.css'],
-  
+  selector: 'app-women',
+  templateUrl: './women.component.html',
+  styleUrls: ['./women.component.css']
 })
-export class HomepageComponent implements OnInit {
-
-
+export class WomenComponent implements OnInit {
 
   ngOnInit(): void {
   }
@@ -23,9 +17,8 @@ export class HomepageComponent implements OnInit {
   // logged:string =this.loggedUser.logged;
   
 
-  constructor(private http: HttpClient /*,private loggedUser:LoggedInService*/ ){
-
-      http.post('http://127.0.0.1:8000/catalog/best/',{"opt":"zzz"}).subscribe((res: any) => {
+  constructor(private http: HttpClient ){
+      http.post('http://127.0.0.1:8000/catalog/women/',{"opt":"zzz"}).subscribe((res: any) => {
         // console.log(res);
   
         for (let catalogI of res["catalogue"]){
@@ -42,15 +35,9 @@ export class HomepageComponent implements OnInit {
   
           });
         }
-      });
-
-    
-
-    
-    
+      });  
 
   
   };
   
-
 }

@@ -1,0 +1,16 @@
+<div class="row my-5 mx-2">
+    <div class="col-8">
+        <div  class= "container shadow-sm py-2" *ngFor= "let i of cartContent"> 
+            <app-product-card [Pimage]='i.Pimage' [Pname]='i.Pname' [Pcost]='i.Pcost'></app-product-card>
+      
+          </div>
+    </div>
+    <div class="col-4 "> 
+        <div class="container shadow-sm" style="background-color: aquamarine;"> 
+                <h5>CART TOTAL: </h5> <p>₹ {{Tcost}}</p>
+        </div>
+    </div>
+</div>
+<!-- <div class="bottom-position">
+<app-footer></app-footer>
+</div> -->

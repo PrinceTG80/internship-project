@@ -9,7 +9,7 @@ import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 })
 export class CarouselComponent implements OnInit {
 
-  carouImgs = [Math.floor(Math.random() * 500) , Math.floor(Math.random() * 500) , Math.floor(Math.random() * 500) ].map((n) => `https://picsum.photos/id/${n}/900/500`);
+  carouImgs = ['5140500.jpg','2659676.jpg','11_Success-1.jpg'].map((n:string) => `http://127.0.0.1:8000/static/${n}`);
 
   constructor(config: NgbCarouselConfig) { 
     config.interval = 4000;

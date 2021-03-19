@@ -1,23 +1,25 @@
-<div class="container my-4">
+<div class="background">
+<div class="container py-4 ">
     <div >
         <div class="row ">
 
             <div class="col"></div>
-            <div  class="col-sm-4 center border border-primary py-2 shadow-lg quicksand" #SignMeUp > <!-- the login box needs a border -->   
+            <div  class="col-sm-4 center border border-primary py-2 shadow-lg quicksand " style="background-color: rgba(255, 255, 255, 0.61);" #SignMeUp > <!-- the login box needs a border -->   
 
                 <h5>Enter your Email ID</h5>
                 <input class="mb-3" style="width: 75%;" type="email" placeholder="Email" [(ngModel)]='inEmail' required > <!-- added 'required' property on 07-03-21-->
                 <div *ngIf='!emailValid'><p style="font-size: 75%; color: red;" >{{emdisp}}</p></div>
 
                 
-
- 
                 <h5>Create your Password</h5>
                 <input class="mb-3" style="width: 75%;" type="password" placeholder="Password" [(ngModel)]='inPswd' required > <!-- you may just use DOM for getting input rather than ngModel-->
                 <div *ngIf='!pswdValid'><p style="font-size: 75%; color: red;">{{pswdDisp}}</p></div>
                 
+                <!--Added-->
+                <h5>Create your UserName</h5>
+                <input class="mb-3" style="width: 75%;" type="text" placeholder="UserName" [(ngModel)]='inUserName' required > <!-- you may just use DOM for getting input rather than ngModel-->
                 
- 
+                
                 <h5>Enter your Mobile Number</h5>
                 <input style="width: 75%;" type="number" placeholder="Mobile Number" [(ngModel)]='inNum' required > <!-- you may just use DOM for getting input rather than ngModel-->
                 <h6 class="text-muted mb-4">This number will be used for verification</h6>
@@ -40,6 +42,10 @@
 
 </div>
 
-<div style="position:absolute, bottom;margin-top: 3%;">
+<!-- <div style="position:absolute, bottom;margin-top: 3%;">
     <app-footer></app-footer>
+</div> -->
+
 </div>
+<!-- <hr class="solid">
+    <a href='https://www.freepik.com/vectors/background'>Harryarts - www.freepik.com</a> -->

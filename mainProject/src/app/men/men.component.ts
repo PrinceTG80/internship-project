@@ -5,12 +5,12 @@ import { LoggedInService } from '../logged-in.service';
 
 
 @Component({
-  selector: 'app-homepage',
-  templateUrl: './homepage.component.html',
-  styleUrls: ['./homepage.component.css'],
+  selector: 'app-men',
+  templateUrl: './men.component.html',
+  styleUrls: ['./men.component.css'],
   
 })
-export class HomepageComponent implements OnInit {
+export class MenComponent implements OnInit {
 
 
 
@@ -24,8 +24,7 @@ export class HomepageComponent implements OnInit {
   
 
   constructor(private http: HttpClient /*,private loggedUser:LoggedInService*/ ){
-
-      http.post('http://127.0.0.1:8000/catalog/best/',{"opt":"zzz"}).subscribe((res: any) => {
+      http.post('http://127.0.0.1:8000/catalog/men/',{"opt":"zzz"}).subscribe((res: any) => {
         // console.log(res);
   
         for (let catalogI of res["catalogue"]){
@@ -44,7 +43,6 @@ export class HomepageComponent implements OnInit {
         }
       });
 
-    
 
     
     

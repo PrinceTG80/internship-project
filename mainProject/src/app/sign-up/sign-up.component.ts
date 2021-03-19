@@ -17,6 +17,7 @@ export class SignUpComponent implements OnInit {
 
   inEmail ='';
   inPswd ='';
+  inUserName='';
   inNum :string;
   emailValid:boolean =true ;
   pswdValid:boolean = false;
@@ -53,7 +54,8 @@ export class SignUpComponent implements OnInit {
 
       "dat":{"email":this.inEmail,
               "pswd":this.inPswd,
-              "mobNum":this.inNum
+              "mobNum":this.inNum,
+              "username":this.inUserName,
             }
     };
 

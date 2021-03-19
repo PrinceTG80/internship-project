@@ -1,10 +1,10 @@
 
 
-<nav class="navbar navbar-expand-lg " style="background-color:#8AF3FF" >
-    <a class="navbar-brand" style="color: #fcb456;" href="#" routerLink='/home' >MySiteName</a>
+<nav class="navbar navbar-expand-lg " style="background-color:#8AF3FF"  >
+    <a class="navbar-brand" style="color: #fcb456;" routerLink='/home' ><img src="http://127.0.0.1:8000/static/Fashionise_logo03.png" alt="" width="150px"></a>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+      <span class=""><img src="http://127.0.0.1:8000/static/list.png" alt="toggler" width="27px"></span>
     </button>
   
     <div class="collapse navbar-collapse quicksand" id="navbarSupportedContent">
@@ -16,21 +16,24 @@
           <p class="nav-link hov mt-lg-3"  [routerLink]="i.link">{{i.title}}</p>  <!-- [href]='' is same as  href='{{}}' -->
         </li>
         
-
         <!-- <li class="nav-item">
           <a class="nav-link disabled" href="#">Disabled link</a>
         </li> -->
         
       </ul>
 
+      <div  style="font-size: x-large;">
+      <a class="hov" href="/login" style="font-size: medium;">Login</a> | <a class="hov" href="/signup" style="font-size: medium;">Signup</a>
+      </div>
+
+
       <div class="nav-item dropdown" >
         <a class="nav-link dropdown-toggle hovershadow" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <img src="http://127.0.0.1:8000/static/user.png" style="width: 25px;" alt="person">
-          <!-- using others website for my icon for now,  also donno how to resize -->      
+          <img src="http://127.0.0.1:8000/static/user.png" style="width: 25px;" alt="person"> 
 
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Profile</a>
+          <a class="dropdown-item" href="/profile">Profile</a>
           <a class="dropdown-item" href="#">Order History</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="/home" (click)="logout()"  style="color:rgb(255, 75, 62);"> Logout</a> <!-- This executes a func as well as reroutes to home-->

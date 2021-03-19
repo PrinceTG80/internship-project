@@ -1,5 +1,6 @@
+<div class="background">
 
-<div class="container my-4">
+<div class="container py-4 ">
             
     <!-- <div class=" background text-center quicksand" >
         <h1 style="color:rgb(255, 123, 0);">
@@ -14,7 +15,7 @@
         <div class="row ">
 
             <div class="col"></div>
-            <div  class="col-sm-4 center border border-primary py-2 shadow-lg quicksand" #logMeIn > <!-- the login box needs a border -->   
+            <div  class="col-sm-4 center border border-primary py-2 shadow-lg quicksand" style="background-color: rgba(255, 255, 255, 0.61);" #logMeIn > <!-- the login box needs a border -->   
                 <div *ngIf='!loginValid'><p style="font-size: 75%; color: red;" >Wrong Email or Password!<br>Try again</p></div>
                 <div #inputEmail><!--this div i've added just for the purpose of inbuilt email validation we get in properties of its children HTMLCollection-->
                     <input style="width: 75%;" type="email" placeholder="Email" [(ngModel)]='inEmail' required />
@@ -41,6 +42,8 @@
 
 
 </div>
-<div class="bottom-position">
+<!-- <div class="bottom-position mt-5">
     <app-footer></app-footer>
+</div> -->
+
 </div>

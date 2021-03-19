@@ -11,7 +11,7 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  linksForHeader=[{link:'/login',title:'Login'}, {link:'/signup',title:'Sign Up'}  ];
+  linksForHeader=[{link:'/men',title:'Men'},{link:'/women',title:'Women'}  ];
 
   constructor(private loggedUser:LoggedInService) { }
 
