@@ -2,7 +2,7 @@
 Autonise Internship team project  
 #The following mainProject contains angular project and myfirstsite
 
-## API OF our site
+## Frontend OF our site
 ### Homepage
 ![](Demoss/Homepage.jpeg)
 ### Footer
