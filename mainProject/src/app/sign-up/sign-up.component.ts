@@ -64,7 +64,7 @@ export class SignUpComponent implements OnInit {
     if ( (ele.children)[1].validity.valid==true && this.pswdValid==true ) {
       
       this.http.post('http://127.0.0.1:8000/data/reg/', this.postUser).subscribe( (res:any) =>{
-      console.log(res);
+      console.log(res['regStatus']);
       if (res['regStatus'] == "success"){
         this.route.navigate(['/home'])
        }

@@ -52,7 +52,7 @@ export class LoginComponent implements OnInit {
     
 
     this.http.post('http://127.0.0.1:8000/data/log_in/', this.postUser).subscribe((res:any) =>{
-      console.log(res);
+      console.log(res['logStatus']);
       if (res['logStatus'] == true){
 
         this.loggedUser.loguserin(res['id']);

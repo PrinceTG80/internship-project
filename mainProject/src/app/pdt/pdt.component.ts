@@ -31,7 +31,8 @@ export class PdtComponent implements OnInit {
       this.Colour=res["colour"];
 
     });
-
+    
+    
   }
     
 
@@ -39,10 +40,16 @@ export class PdtComponent implements OnInit {
   }
 
   addToCart(){
-    this.http.post("http://127.0.0.1:8000/data/cart_add/",{"email":localStorage.getItem("id"),"pdtId":this.pdtId}).subscribe((res:any)=>{
-    // console.log(res);
-    this.ifdisp=true;
-    });
+    if(localStorage.getItem("id")==null){
+      this.disp='Please Login First';
+      
+    }else{
+      this.http.post("http://127.0.0.1:8000/data/cart_add/",{"email":localStorage.getItem("id"),"pdtId":this.pdtId}).subscribe((res:any)=>{
+        // console.log(res);
     
+        });
+    }
+    
+    this.ifdisp=true;
   }
 }
