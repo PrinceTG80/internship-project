@@ -1,6 +1,7 @@
 # internship-project
 Autonise Internship team project  
 ### The following mainProject contains angular project and myfirstsite contains Django Server
+### Link to our Fashionise site http://65.0.112.78/home 
 
 ## Frontend OF our site
 ### Homepage
